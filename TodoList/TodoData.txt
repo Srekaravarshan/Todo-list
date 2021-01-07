@@ -1,0 +1,10 @@
+Buy domain	Buy company domain "novatech"	2021-01-16
+Publish company website	Publish company website on firebase	2021-01-17
+Get the first project	After publishing website get the first project from the customer	2021-01-18
+Submit the project	After hard working on the first project submit and get amount ₹500000 from that happy customer	2021-01-31
+Meet	Meet India's prime minister to get award	2021-01-31
+Finish all the tests	Finish Chemistry test today and finish all the tests within 4 days	2021-01-11
+Buy Audi	Buy Audi latest model with 10 million rupees	2021-10-23
+Buy Lamborghini aventador	Buy Lamborghini aventador with 50 million rupees.	2023-10-23
+Finish PSPP	Finish Pspp test tomorrow	2021-01-08
+PUBG	WINNER WINNER CHICKEN DINNER	2021-01-07

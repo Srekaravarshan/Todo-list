@@ -1,0 +1,69 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="borderPane" fx:controller="com.nova.todolist.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="File">
+                    <MenuItem text="New" onAction="#showNewItemDialog"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Exit" onAction="#handleExit"/>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <HBox>
+                    <Button onAction="#showNewItemDialog">
+                        <tooltip>
+                            <Tooltip text="Add a new task"/>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="@/toolbarButtonGraphics/general/Add16.gif"/>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <ToggleButton text="Today's task" fx:id="filterTasks" onAction="#handleFilterToggle">
+                        <tooltip>
+                            <Tooltip text="Button down: Show today's task. Button up: Show all task"/>
+                        </tooltip>
+                    </ToggleButton>
+                </HBox>
+            </ToolBar>
+        </VBox>
+    </top>
+
+    <left>
+        <ListView fx:id="todoListView" onKeyPressed="#handleDeleteKeyPressed"/>
+    </left>
+
+    <center>
+        <VBox style="-fx-background-color: white">
+            <TextArea fx:id="details" wrapText="true" VBox.vgrow="ALWAYS">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </TextArea>
+            <HBox alignment="CENTER_LEFT">
+                <padding>
+                    <Insets left="5"/>
+                </padding>
+                <Label text="Due: " style="-fx-font-weight: bold">
+                    <font>
+                        <Font size="14"/>
+                    </font>
+                </Label>
+                <Label fx:id="due" style="-fx-font-weight: bold">
+                    <font>
+                        <Font size="16"/>
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
